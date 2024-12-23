@@ -33,8 +33,6 @@ class CreateNutritionService {
 
         return { data: jsonObject };
       }
-
-      console.log(response);
     } catch (error) {
       throw new Error("Failed create.");
     }

@@ -26,16 +26,12 @@ export async function routes(
       console.log(error);
     }
 
-    console.log("CHEGOU");
-
     reply.send({ ok: true });
   });
 
   fastify.post(
     "/create",
     async (request: FastifyRequest, reply: FastifyReply) => {
-      console.log("CHEGOU");
-
       return new CreateNutritionController().handle(request, reply);
     }
   );
