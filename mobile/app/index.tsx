@@ -51,12 +51,7 @@ export default function Index() {
         Sua dieta personalizada com inteligência artificial
       </Text>
       <Link href="/step" asChild>
-        <Pressable
-          style={styles.button}
-          onPressIn={() => console.log("Pressionado para dentro")}
-          onPressOut={() => console.log("Pressionado para fora")}
-          onPress={() => console.log("Clicado!")}
-        >
+        <Pressable style={styles.button}>
           <Text style={styles.buttonText}>Gerar dieta</Text>
         </Pressable>
       </Link>
