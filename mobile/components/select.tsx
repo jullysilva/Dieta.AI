@@ -1,7 +1,6 @@
 import { colors } from "@/constants/colors";
 import {
   StyleSheet,
-  TextInput,
   View,
   Text,
   TouchableOpacity,
@@ -76,7 +75,7 @@ export function Select({
       <Controller
         control={control}
         name={name}
-        render={({ field: { onChange, onBlur, value } }) => (
+        render={({ field: { onChange, value } }) => (
           <>
             <TouchableOpacity
               style={styles.select}
@@ -87,7 +86,7 @@ export function Select({
                   ? options.find((option) => option.value === value)?.label
                   : placeholder}
               </Text>
-              <Feather name="arrow-down" size={16} color="#000" />
+              <Feather name="arrow-down" size={16} color={colors.black} />
             </TouchableOpacity>
             <Modal
               visible={visible}

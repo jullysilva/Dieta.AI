@@ -1,6 +1,5 @@
 import { colors } from "@/constants/colors";
 import {
-  Image,
   Platform,
   Pressable,
   StatusBar,
